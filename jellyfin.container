@@ -1,0 +1,15 @@
+[Container]
+Image=docker.io/jellyfin/jellyfin
+Volume=/data/jellyfin/config:/config
+Volume=/data/jellyfin/cache:/cache
+Mount=type=bind,source=/data/jellyfin/media,destination=/media
+
+[Service]
+ExecStartPre=mkdir -p /data/jellyfin/config
+ExecStartPre=mkdir -p /data/jellyfin/cache
+ExecStartPre=mkdir -p /data/jellyfin/media
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
