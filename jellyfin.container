@@ -1,8 +1,8 @@
 [Container]
 Image=docker.io/jellyfin/jellyfin
-Volume=/data/jellyfin/config:/config
-Volume=/data/jellyfin/cache:/cache
-Mount=type=bind,source=/data/jellyfin/media,destination=/media
+Volume=/data/jellyfin/config:/config:Z
+Volume=/data/jellyfin/cache:/cache:Z
+Mount=type=bind,source=/data/jellyfin/media,destination=/media:Z
 PublishPort=8096:8096
 PublishPort=8920:8920
 
