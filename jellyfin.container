@@ -2,7 +2,7 @@
 Image=docker.io/jellyfin/jellyfin
 Volume=/data/jellyfin/config:/config:Z
 Volume=/data/jellyfin/cache:/cache:Z
-Mount=type=bind,source=/data/jellyfin/media,destination=/media:Z
+Volume=/data/jellyfin/media:/media:Z
 PublishPort=8096:8096
 PublishPort=8920:8920
 
