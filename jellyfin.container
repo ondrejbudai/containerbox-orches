@@ -1,5 +1,5 @@
 [Container]
-Image=docker.io/jellyfin/jellyfin
+Image=docker.io/jellyfin/jellyfin:10.10.5
 Volume=/data/jellyfin/config:/config:Z
 Volume=/data/jellyfin/cache:/cache:Z
 Volume=/data/jellyfin/media:/media:Z
