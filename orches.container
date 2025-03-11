@@ -2,7 +2,7 @@
 Description=Orches: container orchestrator
 
 [Container]
-Image=ghcr.io/orches-team/orches:2ff136306b0169fb2a44e681b2599b368e07f7de
+Image=ghcr.io/orches-team/orches:4a74640729b7fd25cb889f55dcbd6cd36b7f1dfe
 Exec=run
 Volume=/var/lib/orches:/var/lib/orches
 Volume=/etc/containers/systemd:/etc/containers/systemd
